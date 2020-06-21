@@ -1,9 +1,24 @@
 <html>
-<head>
-<Title>Online CV</Title>
-</head>
-<body>
-<p>Hi there!</p>
-<p>It works!</p>
-</body>
+	<head>
+		<Title>Online CV</Title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'css/cv.css' %}">
+	</head>
+	<body>
+		<p>Hi there!</p>
+		<p>It works!</p>
+		<div class="ImageContainer">
+			<div class="TopLContainer">
+				<img class="TopL" src="{% static 'images/Academic.png' %}", alt="Academic History", width="300", height="300">
+					<div class="TopLOverlay">
+						<div class="text">Academic History</div>
+					</div>
+			</div>
+			<img class="TopR" src="{% static 'images/Academic.png' %}", alt="Academic History", width="300", height="300">
+			<img class="BotL" src="{% static 'images/Academic.png' %}", alt="Academic History", width="300", height="300">
+			<img class="BotR" src="{% static 'images/Academic.png' %}", alt="Academic History", width="300", height="300">
+		</div>
+	</body>
 </html>
