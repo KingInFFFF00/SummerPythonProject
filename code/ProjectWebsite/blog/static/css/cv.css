@@ -1,41 +1,158 @@
 body {
 	background: #D4D4D4;
 }
-div.ImageContainer{
+.ImageContainer{
 	width:auto;
 	height:auto;
 	text-align: center;
 }
-img {
-	display:block;
-	margin:20px auto;
-	border-radius:8px;
+.LColumn{
+	float:left;
+	padding: 10px;
 }
-.TopLContainer {
-  position: relative;
-  width: 50%;
+.RColumn{
+	float:left;
+	padding:10px;
 }
-.TopLContainer:hover .overlay {
-  bottom: 0;
-  height: 100%;
+/*Image Styling*/
+.TopL {
+	display: block;
+  	height: auto;
+  	margin-left:auto;
+  	margin-right:auto;
 }
-.overlay {
+.TL-overlay {
   position: absolute;
-  bottom: 100%;
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
+  margin-left: auto;
+  margin-right:auto;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
   transition: .5s ease;
+  background-color: #005AFF;
 }
-.text {
-  white-space: nowrap; 
+
+.TopLcontainer {
+  position: relative;
+  text-align:center;
+  width: 100%;
+  margin-bottom:10px;
+}
+
+.TopLcontainer:hover .TL-overlay {
+  opacity: 0.5;
+}
+.TL-text {
   color: white;
   font-size: 20px;
   position: absolute;
-  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.BL-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right:auto;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #8400CC;
+}
+
+.BotLcontainer {
+  position: relative;
+  text-align:center;
+  width: 100%;
+}
+
+.BotLcontainer:hover .BL-overlay {
+  opacity: 0.5;
+}
+.BL-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*Right column */
+.TR-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right:auto;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffae1a;
+}
+
+.TopRcontainer {
+  position: relative;
+  text-align:center;
+  width: 100%;
+  margin-bottom:10px;
+}
+
+.TopRcontainer:hover .TR-overlay {
+  opacity: 0.5;
+}
+.TR-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.BR-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right:auto;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00b374;
+}
+
+.BotRcontainer {
+  position: relative;
+  text-align:center;
+  width: 100%;
+}
+
+.BotRcontainer:hover .BR-overlay {
+  opacity: 0.5;
+}
+.BR-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
