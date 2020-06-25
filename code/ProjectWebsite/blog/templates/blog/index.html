@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<Title>Online CV</Title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'css/cv.css' %}">
+	</head>
+	<body>
+		<div class="ImageContainer">
+			<div class="LColumn">
+			<div onclick="location.href='personal.html';" class="TopLcontainer">
+				<img  class="TopL linkimg" src="{% static 'images/Personal.png' %}", alt="Personal Statement", width="300", height="300">
+				<div class="TL-overlay"></div>
+				<div class="TL-text">Personal Statement</div>
+			</div>
+			<div onclick="location.href='academic.html';" class ="BotLcontainer">
+				<img class="BotL linkimg" src="{% static 'images/Academic.png' %}", alt="Academic History", width="300", height="300">
+				<div class="BL-overlay"></div>
+				<div class="BL-text">Academic History</div>
+			</div>
+			</div>
+			<div class="RColumn">
+				<div onclick="location.href='work.html';" class="TopRcontainer">
+					<img class="TopR linkimg" src="{% static 'images/Work.png' %}", alt="Work History", width="300", height="300">
+					<div class="TR-overlay"></div>
+					<div class="TR-text">Work History</div>
+				</div>
+				<div onclick="location.href='achievement.html';" class = "BotRcontainer">
+					<img class="BotR linkimg" src="{% static 'images/Achievement.png' %}", alt="Personal Achievements", width="300", height="30">
+					<div class="BR-overlay"></div>
+					<div class="BR-text">Personal Achievements</div>
+				</div>
+			
+			</div>
+		</div>
+	</body>
+</html>
