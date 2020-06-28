@@ -1,0 +1,49 @@
+body{
+}
+.FormerTitle{
+	width:100%;
+	background:#d395f5;
+	font-size:20px;
+	font-family: "Times New Roman", Times, serif;
+}
+.hist{
+	padding-left:5px;
+}
+.collapsible {
+  background-color: #ad52de;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  margin-left:5px;
+  margin-top:10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.gcsecontent{
+	margin-left:5px;
+	padding:0 18px;
+	margin-bottom:10px;
+	background-color:#cf8fcf;
+	display:none;
+	overflow:hidden;
+	border-style:solid;
+	border-top-style:none;
+
+}
+.aslevelcontent{
+	margin-left:5px;
+	padding:0 18px;
+	background-color:#cf8fcf;
+	display:none;
+	overflow:hidden;
+}
+.alevelcontent{
+	margin-left:5px;
+	padding:0 18px;
+	background-color:#cf8fcf;
+	display:none;
+	overflow:hidden;
+}

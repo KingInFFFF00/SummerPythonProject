@@ -1,0 +1,227 @@
+body {
+	background: #D4D4D4;
+}
+.ImageContainer{
+	width:auto;
+	height:auto;
+	text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+.LColumn{
+	float:left;
+	padding: 10px;
+  margin-left: 28%;
+  margin-top:20px;
+}
+.RColumn{
+	float:left;
+	padding:10px;
+  margin-top:20px;
+  margin-right:27%;
+}
+.linkimg{
+  border-radius:5px;
+}
+/*Image Styling*/
+.TopL {
+	display: block;
+  	height: auto;
+  	margin-left:auto;
+  	margin-right:auto;
+    transition: .5s ease;
+}
+.TL-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right:auto;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #005AFF;
+  border-radius: 5px;
+}
+
+.TopLcontainer {
+  position: relative;
+  text-align:center;
+  width: 100%;
+  margin-bottom:20px;
+  cursor:pointer;
+}
+.TL-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: .5s ease;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity:0;
+}
+.TopLcontainer:hover .TL-overlay {
+  opacity: 0.5;
+}
+.TopLcontainer:hover .TL-text{
+  opacity: 1;
+}
+.TopLcontainer:hover .TopL{
+  filter:blur(3px);
+}
+.BotL {
+  display: block;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    transition: .5s ease;
+}
+.BL-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right:auto;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #8400CC;
+  border-radius:5px;
+}
+.BL-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: .5s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.BotLcontainer {
+  position: relative;
+  text-align:center;
+  width: 100%;
+  cursor:pointer;
+}
+
+.BotLcontainer:hover .BL-overlay {
+  opacity: 0.5;
+}
+.BotLcontainer:hover .BL-text{
+  opacity:1;
+}
+.BotLcontainer:hover .BotL{
+  filter:blur(3px);
+}
+
+/*Right column */
+.TopR {
+  display: block;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    transition: .5s ease;
+}
+.TR-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right:auto;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffae1a;
+  border-radius:5px;
+}
+
+.TopRcontainer {
+  position: relative;
+  text-align:center;
+  width: 100%;
+  margin-bottom:20px;
+  cursor:pointer;
+}
+.TR-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity:0;
+  transition: .5s ease;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.TopRcontainer:hover .TR-overlay {
+  opacity: 0.5;
+}
+.TopRcontainer:hover .TR-text{
+  opacity:1;
+}
+.TopRcontainer:hover .TopR{
+  filter:blur(3px);
+}
+.BotR {
+  display: block;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    transition: .5s ease;
+}
+.BR-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right:auto;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00b374;
+  border-radius:5px;
+}
+
+.BotRcontainer {
+  position: relative;
+  text-align:center;
+  width: 100%;
+  cursor:pointer;
+}
+.BR-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.BotRcontainer:hover .BR-overlay {
+  opacity: 0.5;
+}
+.BotRcontainer:hover .BR-text{
+  opacity:1;
+}
+.BotRcontainer:hover .BotR{
+  filter:blur(3px);
+}
