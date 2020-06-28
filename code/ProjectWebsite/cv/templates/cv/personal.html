@@ -6,11 +6,10 @@
 		{% load static %}
 			<link rel="stylesheet" href="{% static 'css/pers.css' %}">
 	</head>
-	<body>
+	<body onload="reSizeTop()">
 		<div class = "Header"> 
-			<div class="title" style="width:20%; margin-left:auto; margin-right:auto;">Personal Statement</div>
-			<div class="Back" onclick="goBack()">Back</div>
-
+			<div class="Back" onclick="goBack()" onMouseOver="">Back</div>
+			<p class="title" style="margin-right:auto; margin-left:calc(46% - (12px + 5%));">Personal Statement</p>
 		</div>
 		<div class="Text">I have wanted to work in the field of technology and computer science since starting a GCSE in Computer Science at Bishop Challoner Catholic College. I discovered a hidden talent for coding and software development right at the start of the course, receiving an introduction to coding in python, which I quickly grew to appreciate and study outside of lessons, developing programs and projects for my own enjoyment. From this point onwards, I knew I wanted to work in the field of computer science. I continued with my studies at Bishop Challoner, while also considering where to go to further my understanding; I decided to go with the University of Birmingham’s Computer Science course, specifically a degree apprenticeship with Vodafone UK.<br>
 
