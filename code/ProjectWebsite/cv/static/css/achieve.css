@@ -1,0 +1,16 @@
+.AchieveTitle{
+	width:110%;
+	background:#32edab;
+	font-size:30px;
+	font-family: "Times New Roman", Times, serif;
+	cursor:default;
+}
+.Back{
+	width:5%;
+	background:#13d490;
+	cursor:pointer;
+	text-align:center;
+	border:black;
+	margin-right:20px;
+	padding-top:10px;
+}

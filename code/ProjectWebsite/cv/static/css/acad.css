@@ -38,6 +38,8 @@
 	background-color:#cf8fcf;
 	display:none;
 	overflow:hidden;
+	border-style:solid;
+	border-top-style:none;
 }
 .alevelcontent{
 	margin-left:5px;
@@ -45,4 +47,6 @@
 	background-color:#cf8fcf;
 	display:none;
 	overflow:hidden;
+	border-style:solid;
+	border-top-style:none;
 }

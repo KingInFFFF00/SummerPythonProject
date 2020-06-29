@@ -1,11 +1,26 @@
 <html>
 <head>
-	<title>Academic History</title>
+	<title>Work History</title>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/work.css' %}">
 </head>
 <body>
-	<a>Hello</a>
+	<div class="Head" style="display:flex;	background:#f7be57;">
+		<div class="Back" onclick="goBack()">Back</div>
+		<div class="WorkTitle">Personal Achievements</div>
+	</div>
+	<h2>Work Experience Placements</h2>
+	<ul>
+		<li>In 2016, I undertook work experience in my school inside the Laptop Repair area, where we repaired laptops and computers for the students</li>
+		<li>In 2017, I undertook a work experience placement at Aristi, a Cybersecurity company in Longbridge, Birmingham. There, I began development of cybersecurity focused skill set, while also becoming involved in administrative work organising and reformatting timesheets for the company</li>
+	</ul>
+	<h2>Paid Work</h2>
+	<ul>
+		<li>During my AS/A level years at Bishop Challoner, I took on paid work at the Laptop Repair area</li>
+		<li>During the summer of 2018, I undertook some paid work for a local Go-Kart company</li>
+	</ul>
 </body>
 <script>
 	function goBack(){
