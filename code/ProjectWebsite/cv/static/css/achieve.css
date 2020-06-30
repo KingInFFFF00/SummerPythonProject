@@ -6,11 +6,20 @@
 	cursor:default;
 }
 .Back{
+	margin:5px;
 	width:5%;
 	background:#13d490;
 	cursor:pointer;
 	text-align:center;
-	border:black;
+	border-width:2px;
+	border-style: solid;
 	margin-right:20px;
-	padding-top:10px;
+	padding-top:2.5px;
+	transition:0.5s ease;
+}
+.Back:hover{
+	filter:brightness(1.2);
+}
+.Content{
+	margin-left:2.5%;
 }
