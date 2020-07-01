@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<Title>Online CV</Title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+	</head>
+	<body>
+		<div class="header">David's Summer Project Blog - <a href="/cv">Link To CV Website</a></div>
+		{% for post in posts %}
+			<div class="Post">
+				<a id="title" href="">{{post.title}} - {{post.published_date}}</a>
+				<p>{{post.text}}</p>
+			</div>
+		{%endfor%}
+	</body>
+</html>

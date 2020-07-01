@@ -1,0 +1,21 @@
+body {
+	background: #D4D4D4;
+}
+.header{
+  background:#EEEEEE;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size:30px;
+  margin-bottom:10px;
+}
+.Post{
+  background:#FFFFFF;
+  width:50%;
+  border-radius:5px;
+  padding:5px;
+  margin:10px;
+}
+#title{
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size:20px;
+  margin-bottom:5px;
+}
