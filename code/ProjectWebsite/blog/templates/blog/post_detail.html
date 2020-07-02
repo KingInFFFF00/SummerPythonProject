@@ -1,9 +1,7 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-		{% for post in posts %}
 			<div class="Post">
 				<a id="title" href="{% url 'post_detail' pk=post.pk %}">{{post.title}} - {{post.published_date}}</a>
 				<p>{{post.text}}</p>
 			</div>
-		{%endfor%}
 {% endblock %}
