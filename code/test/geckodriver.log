@@ -21,3 +21,15 @@
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1593779530852	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRWyztV"
+1593779533946	Marionette	INFO	Listening on port 36101
+1593779533975	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593779542684	Marionette	INFO	Stopped listening on port 36101
+1593779546783	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8f1Hiq"
+1593779549848	Marionette	INFO	Listening on port 40173
+1593779549930	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593779556701	Marionette	INFO	Stopped listening on port 40173
+1593780129036	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVHGo2S"
+1593780132139	Marionette	INFO	Listening on port 35911
+1593780132163	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593780132946	Marionette	INFO	Stopped listening on port 35911
