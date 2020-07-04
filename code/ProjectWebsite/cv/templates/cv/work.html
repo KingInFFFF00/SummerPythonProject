@@ -11,6 +11,7 @@
 		<div class="Back" onclick="goBack()">Back</div>
 		<div class="WorkTitle">Work History</div>
 	</div>
+	<div class="NewSection"><a href="work_edit.html">New Work Log</a></div>
 	<div class="content">
 	<h2>Work Experience Placements</h2>
 	<ul style="width:50%">
@@ -22,6 +23,19 @@
 	<ul>
 		<li>During my AS/A level years at Bishop Challoner, I took on paid work at the Laptop Repair area</li>
 		<li>During the summer of 2018, I worked for a local Go-Kart company</li>
+	{% block paidWork %}
+		{% for job in paidWorks %}
+				<li>{{job.text}}</li>
+		{% endfor %}
+	{% endblock %}
+	</ul>
+	<h2>Unpaid Work</h2>
+	<ul>
+	{% block unpaidWork %}
+		{% for job in unpaidWorks %}
+				<li>{{job.text}}</li>
+		{% endfor %}
+	{% endblock %}
 	</ul>
 </div>
 </body>

@@ -19,6 +19,7 @@
 					<li>Completed A-Level Education at Bishop Challoner 6th Form in 2018</li>
 				</ul>
 			</div>
+			<div class="New Section"><a href="education_edit.html">New Education Achievement</a></div>
 			<button type="button" class="collapsible">GCSE</button>
 			<div class="gcsecontent">
 				<h2 style="font-size:25px;">Grade A*</h2>
@@ -60,7 +61,18 @@
 					<li> Chemistry - Edexcel - B</li>					
 				</ul>
 			</div>
+			<button type="button" class="collapsible">Further Education</button>
+			<div class="furthercontent">
+				{% block content %}
+				<ul>
+				{% for education in educations %}
+						<li>{{education.text}}</li>
+				{% endfor %}
+				</ul>
+				{% endblock %}
+			</div>
 		</div>
+		
 	</body>
 	<script>
 	function goBack(){

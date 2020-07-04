@@ -12,6 +12,7 @@
 		<div class="AchieveTitle">Personal Achievements</div>
 	</div>
 	<div class="Content">
+	<div class="New Section"><a href="personal_edit.html">New Personal Achievement</a></div>
 	<h2> Extra-Curricular Activities </h2>
 	<ul style="width:50%;">
 		<li>I was a member of the Scout organisation since I was 7 years old, and completed all levels up to and including Explorers in 2018. During my time there, I earned various awards for orienteering, science experiments and camping experiences.</li>
@@ -28,6 +29,15 @@
 		<li>July 2013 - Outstanding Achievement in the Subject of STEM</li>
 		<li>July 2013 - Outstanding Achievement</li>
 	</ul>
+	<!-- Figure this part out for achievement -->
+	<h2> Further Personal Achievements</h2>
+		{% block content %}
+			<ul>
+				{% for achievement in personals %}
+						<li>{{achievement.text}}</li>
+				{% endfor %}
+			</ul>
+		{% endblock %}
 </div>
 </body>
 <script>
