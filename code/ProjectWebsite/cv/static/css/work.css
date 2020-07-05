@@ -5,6 +5,9 @@
 	font-family: "Times New Roman", Times, serif;
 	cursor:default;
 }
+body{
+	background-color: rgba(247, 190, 87, 0.2)
+}
 .Back{
 	margin:5px;
 	width:5%;
