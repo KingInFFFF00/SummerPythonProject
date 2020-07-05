@@ -1,0 +1,18 @@
+.header{
+	background: #D4D4D4;
+	font-family: 'Playfair Display', serif;
+	font-size:30px;
+	display:flex;
+}
+.back{
+	width:5%;
+	cursor:pointer;
+	background: #D4D4D4;
+	border-style:solid;
+	border-width:2px;
+	margin-right:5%;
+	transition:0.6s ease;
+}
+.back:hover{
+	filter:brightness(1.05);
+}

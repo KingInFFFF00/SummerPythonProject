@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import EducationHistory, WorkHistory,PersonalAchievement
 from .forms import *
 def index(request):
@@ -16,11 +16,32 @@ def work(request):
 def personal(request):
 	return render(request, 'cv/personal.html',{})
 def education_edit(request):
-	form = EducationForm()
+	if request.method=="POST":
+		form = EducationForm(request.POST)
+		if form.is_valid():
+			educationHistory = form.save(commit=False)
+			educationHistory.save()
+			return redirect('academic')
+	else:
+		form = EducationForm()
 	return render(request, 'cv/education_edit.html',{'form':form})
 def work_edit(request):
-	form = WorkForm()
+	if request.method=="POST":
+		form = WorkForm(request.POST)
+		if form.is_valid():
+			workHistory = form.save(commit=False)
+			workHistory.save()
+			return redirect('work')
+	else:
+		form = WorkForm()
 	return render(request, 'cv/work_edit.html',{'form':form})
 def personal_edit(request):
-	form = AchievementForm()
+	if request.method=="POST":
+		form = AchievementForm(request.POST)
+		if form.is_valid():
+			personalAchievement = form.save(commit=False)
+			personalAchievement.save()
+			return redirect('achievement')
+	else:
+		form = AchievementForm()
 	return render(request, 'cv/personal_edit.html',{'form':form})

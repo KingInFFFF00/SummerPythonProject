@@ -8,9 +8,11 @@
 		<link rel="stylesheet" href="{% static 'css/base.css' %}">
 	</head>
 	<body>
-		<div class="header">Form<a onclick="goBack()">Go Back</a></div>
+		<div class="header">
+			<div class="Back" onclick="goBack()">Back</div>
+			<div class="Text">New Item Form</div>
+		</div>
 		{% block content %}
-
 		{% endblock %}
 	</body>
 	<script>
