@@ -12,6 +12,7 @@
 				<div class="Back" onclick="goBack()">Back</div>
 				<div class="FormerTitle">List of former Academic Placements</div>
 			</div>
+			<div class="NewSection"><a href="education_edit.html">New Education Achievement</a></div>
 			<div class="hist">
 				<ul>
 					<li>Completed primary school education at St. Dunstan’s Catholic School in 2011</li>
@@ -19,7 +20,6 @@
 					<li>Completed A-Level Education at Bishop Challoner 6th Form in 2018</li>
 				</ul>
 			</div>
-			<div class="New Section"><a href="education_edit.html">New Education Achievement</a></div>
 			<button type="button" class="collapsible">GCSE</button>
 			<div class="gcsecontent">
 				<h2 style="font-size:25px;">Grade A*</h2>
@@ -76,7 +76,7 @@
 	</body>
 	<script>
 	function goBack(){
-		window.history.back();
+		window.location.assign("/cv")
 	}
 	var btns = document.getElementsByClassName("collapsible");
 	var i;

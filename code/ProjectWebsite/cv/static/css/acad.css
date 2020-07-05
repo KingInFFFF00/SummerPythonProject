@@ -26,6 +26,12 @@
 .Back:hover{
 	filter:brightness(1.1);
 }
+.NewSection{
+	font-size:20px;
+	font-family: "Times New Roman", Times, serif;
+	background:#d395f5;
+
+}
 .collapsible {
   background-color: #ad52de;
   color: white;
